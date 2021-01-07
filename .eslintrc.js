@@ -19,7 +19,7 @@ module.exports = {
   // required to lint *.vue files
   // 此项是用来提供插件的，插件名称省略了eslint-plugin-，下面这个配置是用来规范html的
   plugins: [
-    'vue'
+    // 'vue'
   ],
   // add your custom rules here
   // 下面这些rules是用来设置从插件来的规范代码的规则，使用必须去掉前缀eslint-plugin-

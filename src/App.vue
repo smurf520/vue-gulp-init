@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+    <img src="./../src/assets/icon.jpeg" class="iconClass" />
+    <router-view />
   </div>
 </template>
 
-<script>
-
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+@Component({})
+export default class App extends Vue {}
 </script>
 
-<style>
+<style lang="less">
+@import url('../src/style/common.less');
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .iconClass {
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+  }
 }
 </style>
