@@ -15,9 +15,11 @@ yarn run serve
 yarn run build
 ```
 
-### Run your tests
+### Run on server
 ```
-yarn run test
+cd _server
+yarn install
+yarn run dev
 ```
 
 ### Lints and fixes files
