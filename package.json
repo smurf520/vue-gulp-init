@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "server": "npm run build && gulp && node _server/index.js"
+    "server": "npm run build && gulp && ts-node-dev ./_server/src/app.ts"
   },
   "dependencies": {
     "core-js": "^3.6.5",
