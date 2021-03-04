@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "server": "npm run build && gulp && ts-node-dev ./_server/src/app.ts"
+    "server": "npm run build && gulp && ts-node-dev ./_server/src/app.ts",
+    "lint-staged": "eslint src"
   },
   "husky": {
     "hooks": {
