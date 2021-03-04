@@ -8,6 +8,15 @@
     "lint": "vue-cli-service lint",
     "server": "npm run build && gulp && ts-node-dev ./_server/src/app.ts"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.js": "eslint --ext .js",
+    "**/*.vue": "eslint --ext .vue"
+  },
   "dependencies": {
     "core-js": "^3.6.5",
     "less": "^4.0.0",
